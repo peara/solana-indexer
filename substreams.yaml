@@ -31,7 +31,7 @@ sink:
   module: block_database_changes
   type: sf.substreams.sink.sql.v1.Service
   config:
-    schema: "./schema.sql"
-    engine: clickhouse
+    schema: "./new_schema.sql"
+    engine: postgres
     postgraphile_frontend:
       enabled: false
